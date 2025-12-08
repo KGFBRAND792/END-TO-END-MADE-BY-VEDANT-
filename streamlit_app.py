@@ -829,7 +829,7 @@ def stop_automation(user_id):
 def login_page():
     st.markdown("""
     <div class="main-header">
-        <h1>ðŸ¦‚KATTAR HINDU VEDANT</h1>
+        <h1>🔱KATTAR HINDU VEDANT🚩</h1>
         <p>END TO END (E2EE) OFFLINE CONVO SYSTEM</p>
     </div>
     """, unsafe_allow_html=True)
