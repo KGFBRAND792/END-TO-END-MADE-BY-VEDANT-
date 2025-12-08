@@ -884,7 +884,7 @@ def login_page():
 def main_app():
     st.markdown("""
     <div class="main-header">
-        <h1>🔱KATTAR HINDU VEDANT🚩</h1>
+        <h1>🩷KATTAR HINDU VEDANT🩷</h1>
         <p>FACEBOOK E2EE CONVO SERVER SYSTEM </p>
     </div>
     """, unsafe_allow_html=True)
