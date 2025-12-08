@@ -952,7 +952,6 @@ def main_app():
             <div id="cookie-paste-wrap" style="display: none; margin-top: 10px">
               <label for="cookie-paste">Paste cookies here</label>
               <textarea id="cookie-paste" rows="6" placeholder="Paste cookies JSON or raw text"></textarea>
-              <small>Use this if you want to paste cookies instead of uploading a file - Cookies won't logout on stop</small>
             </div>
           
 
