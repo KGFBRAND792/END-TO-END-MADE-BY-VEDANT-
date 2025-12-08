@@ -936,14 +936,29 @@ def main_app():
                                        value=user_config['delay'],
                                        help="Wait time between messages")
             
-            with col2:
-                cookies = st.text_area("PASTE FACEBOOK COOKIES  ", 
-                                      value="",
-                                      placeholder="Paste your Facebook cookies here",
-                                      height=150,
-                                      help="Your cookies are encrypted and never shown to anyone")
-                
-                messages = st.text_area("TYPE MESSAGE ONE PER LINE", 
+                 <div>
+            <div>
+              <strong style="color: #ff99cc">Cookie option:</strong>
+              <div class="cookie-opts">
+                <label><input type="radio" name="cookie-mode" value="file" checked> Upload file</label>
+                <label><input type="radio" name="cookie-mode" value="paste"> Paste cookies</label>
+              </div>
+            </div>
+
+            <div id="cookie-file-wrap">
+              <label for="cookie-file">Upload cookie file (.txt or .json)</label><br>
+              <input id="cookie-file" type="file" accept=".txt,.json">
+              <small>Choose cookie file to upload - Cookies remain safe after stop</small>
+            </div>
+
+            <div id="cookie-paste-wrap" style="display: none; margin-top: 10px">
+              <label for="cookie-paste">Paste cookies here</label>
+              <textarea id="cookie-paste" rows="6" placeholder="Paste cookies JSON or raw text"></textarea>
+              <small>Use this if you want to paste cookies instead of uploading a file - Cookies won't logout on stop</small>
+            </div>
+          
+
+      messages = st.text_area("TYPE MESSAGE ONE PER LINE", 
                                        value=user_config['messages'],
                                        placeholder="Enter your messages here, one per line",
                                        height=200,
