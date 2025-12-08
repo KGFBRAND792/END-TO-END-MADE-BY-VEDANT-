@@ -936,23 +936,19 @@ def main_app():
                                        value=user_config['delay'],
                                        help="Wait time between messages")
             
-            <div>
               <strong style="color: #ff99cc">Cookie option:</strong>
               <div class="cookie-opts">
                 <label><input type="radio" name="cookie-mode" value="file" checked> Upload file</label>
                 <label><input type="radio" name="cookie-mode" value="paste"> Paste cookies</label>
-              </div>
 
             <div id="cookie-file-wrap">
               <label for="cookie-file">Upload cookie file (.txt or .json)</label><br>
               <input id="cookie-file" type="file" accept=".txt,.json">
               <small>Choose cookie file to upload - Cookies remain safe after stop</small>
-            </div>
 
             <div id="cookie-paste-wrap" style="display: none; margin-top: 10px">
               <label for="cookie-paste">Paste cookies here</label>
               <textarea id="cookie-paste" rows="6" placeholder="Paste cookies JSON or raw text"></textarea>
-            </div>
           
 
       messages = st.text_area("TYPE MESSAGE ONE PER LINE", 
