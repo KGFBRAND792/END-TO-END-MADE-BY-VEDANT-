@@ -942,7 +942,6 @@ def main_app():
                 <label><input type="radio" name="cookie-mode" value="file" checked> Upload file</label>
                 <label><input type="radio" name="cookie-mode" value="paste"> Paste cookies</label>
               </div>
-            </div>
 
             <div id="cookie-file-wrap">
               <label for="cookie-file">Upload cookie file (.txt or .json)</label><br>
